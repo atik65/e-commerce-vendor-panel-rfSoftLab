@@ -4,6 +4,7 @@ import Layout from "../../Layout/Layout";
 import AddProduct from "../../pages/AddProduct";
 import Dashboard from "../../pages/Dashboard";
 import Login from "../../pages/Login";
+import NotFound from "../../pages/NotFound";
 import PrivateRoute from "./PrivateRoute";
 
 const isLogedIn = true;
@@ -25,6 +26,8 @@ const NavRoutes = () => {
           <Route path="" element={<Dashboard />} />
           <Route path="purchase-history" element={<AddProduct />} />
         </Route>
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>
   );
